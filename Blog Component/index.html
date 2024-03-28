@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./dist/app.css">
+  <title>Blog Card</title>
+</head>
+
+<body>
+  <main class="flex justify-center">
+
+    <!-- Blog Card Project done in Tailwind v4 -->
+
+    <!-- Main Container -->
+    <div
+      class="bg-custom-yellow flex justify-center w-[23.4375rem] md:max-w-[90rem] md:w-full md:h-dvh h-[50.75rem] items-center text-center md:shrink-0">
+
+      <!-- White Card -->
+      <div
+        class="flex w-[20.4375rem] h-[31.325rem]  flex-col bg-white rounded-[1.25rem]  shadow-custom items-start font-Figtree hover:shadow-hover-custom">
+
+        <!-- Image -->
+        <img class="rounded-[0.625rem] p-[1.5rem]" src="./images/illustration-article.svg" alt="abstract illustration">
+
+        <!-- Text Content -->
+        <div class="flex flex-col text-left px-[1.5rem] gap-[0.75rem]">
+          <h4
+            class="bg-custom-yellow py-[0.25rem] px-[0.75rem] rounded-[0.25rem] text-custom-black font-extrabold w-fit text-[0.875rem]">
+            Learning</h4>
+          <h5 class="text-[0.875rem font-medium text-custom-black">Published 21 Dec 2023</h5>
+          <h1 class="font-extrabold text-custom-black text-[1.5rem] hover:cursor-pointer hover:text-custom-yellow">HTML
+            & CSS foundations</h1>
+          <h3 class="font-medium text-[1rem] text-custom-grey">These languages are the backbone of every website,
+            defining structure, content, and presentation.</h3>
+        </div>
+
+        <!-- Avatar & Name -->
+        <div class="flex px-[1.5rem] py-[1.5rem] items-center">
+          <img class="w-[2rem] h-[2rem] " src="./images/image-avatar.webp" alt="avatar of Greg Hooper">
+          <h2 class="ml-[.75rem] text-custom-black font-extrabold">Greg Hooper</h2>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
