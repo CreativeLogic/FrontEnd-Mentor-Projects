@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
     rel="stylesheet">
+  <script defer src="https://kit.fontawesome.com/66cd2b0473.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
   <link rel="stylesheet" href="./dist/app.css">
   <title>Blog Card</title>
@@ -19,7 +20,7 @@
 
     <!-- Main Container -->
     <div
-      class="flex justify-center items-center w-[23.4375rem] pb-[9.75rem] bg-custom-yellow font-figtree m:w-[90rem] small-padding md:w-[90rem] larger-padding">
+      class="flex flex-col justify-center items-center bg-custom-yellow font-figtree  small-padding md:w-[90rem] larger-padding">
 
       <!-- White Card -->
       <div
@@ -49,11 +50,23 @@
           <span class="ml-[0.75rem] text-[0.875rem] text-custom-black font-black">Greg
             Hooper</span>
         </div>
-      </div>
 
+        <!-- Attribution -->
+        <div class="flex flex-col items-center justify-center font-extrabold tracking-tight mt-[2.7rem] text-[1.2rem]">
+          <p class="px-[0.27rem]">
+            Challenge by <a class="hover:opacity-90 hover:text-white" href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank">Frontend
+              Mentor</a>.
+          </p>
+          <p>
+            Coded by <a href="https://github.com/CreativeLogic/" target="_blank"><i class="fab fa-github"></i><span
+                class="hover:opacity-90 hover:text-white hover:cursor-pointer"><span
+                  class="pl-[0.27rem]">CreativeLogic</span></span>.</a>
+          </p>
+        </div>
+      </div>
     </div>
   </main>
-
 </body>
 
 </html>
