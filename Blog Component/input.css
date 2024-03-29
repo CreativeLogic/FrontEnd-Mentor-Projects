@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+.small-padding {
+  padding: 9.6875rem 1.5rem 9.75rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .larger-padding {
+    padding: 13.65625rem 0rem 13.71875rem 0rem;
+  }
+}
+
 @theme {
   --font-family-figtree: "Figtree", sans-serif;
   --color-custom-yellow: #f4d04e;
@@ -8,5 +18,4 @@
 
   --shadow-custom: 8px 8px 0px 0px #000;
   --shadow-custom-hover: 16px 16px 0px 0px #000;
-  --border-custom: 1px solid #111;
 }
