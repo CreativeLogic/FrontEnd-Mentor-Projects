@@ -1,18 +1,23 @@
 @import "tailwindcss";
 
 .small-padding {
-  padding: 5.3125rem 1.6875rem 5.3125rem 1.75rem;
+  padding: 9.6875rem 1.5rem 9.75rem 1.5rem;
 }
+
 @media (min-width: 768px) {
-  .large-padding {
-    padding: 9.5rem 0rem 9.4375rem 0rem;
+  .larger-padding {
+    padding: 13.65625rem 0rem 13.71875rem 0rem;
   }
 }
 
 @theme {
-  --font-family-outfit: "Outfit", sans-serif;
-  --color-dark-navy: #1f314f;
-  --color-text-grey: #7d889e;
-  --color-background-grey: #d5e1ef;
-  --shadow-custom: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
+  --font-family-figtree: "Figtree", sans-serif;
+  --color-custom-yellow: #f4d04e;
+  --color-custom-black: #111;
+  --color-custom-grey: #7f7f7f;
+
+  --shadow-custom: 8px 8px 0px 0px #000;
+  --shadow-custom-hover: 16px 16px 0px 0px #000;
 }
+
+
