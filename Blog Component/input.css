@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --font-family-figtree: "Figtree", sans-serif;
+  --color-custom-yellow: #f4d04e;
+  --color-custom-black: #111;
+  --color-custom-grey: #7f7f7f;
+
+  --shadow-custom: 8px 8px 0px 0px #000;
+  --shadow-custom-hover: 16px 16px 0px 0px #000;
+  --border-custom: 1px solid #111;
+}
