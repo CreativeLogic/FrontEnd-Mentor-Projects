@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  --font-family-outfit: "Outfit", sans-serif;
+  --color-dark-navy: #1f314f;
+  --color-text-grey: #7d889e;
+  --color-background-grey: #d5e1ef;
+  --shadow-custom: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
+}
