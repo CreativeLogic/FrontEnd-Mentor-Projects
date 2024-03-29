@@ -4,50 +4,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
     rel="stylesheet">
+  <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
   <link rel="stylesheet" href="./dist/app.css">
   <title>Blog Card</title>
 </head>
 
 <body>
-  <main class="flex justify-center">
-
-    <!-- Blog Card Project done in Tailwind v4 -->
+  <main class="flex items-center justify-center h-dvh">
 
     <!-- Main Container -->
     <div
-      class="bg-custom-yellow flex justify-center w-[23.4375rem] md:max-w-[90rem] md:w-full md:h-dvh h-[50.75rem] items-center text-center md:shrink-0">
+      class="flex justify-center items-center w-[23.4375rem] pt-[9.69rem] pb-[9.75rem] bg-custom-yellow font-figtree md:w-[90rem] md:h-[60rem]">
 
       <!-- White Card -->
       <div
-        class="flex w-[20.4375rem] min-h-[31.325rem]  flex-col bg-white rounded-[1.25rem] md:w-[24rem] shadow-custom items-start font-Figtree border border-custom-black hover:shadow-hover-custom">
+        class="flex flex-col w-[20.4375rem] h-[31.3125rem] rounded-[1.25rem] shadow-custom bg-white border border-custom hover:cursor-pointer hover:shadow-custom-hover">
 
         <!-- Image -->
-        <img class="rounded-[0.625rem] p-[1.5rem]" src="./images/illustration-article.svg" alt="abstract illustration">
+        <div class=" mx-auto pt-[1.5rem]">
+          <img class="rounded-[0.625rem] w-[17.4375rem] h-[12.5rem] object-cover"
+            src="./images/illustration-article.svg" alt="abstract illustration">
+        </div>
 
         <!-- Text Content -->
-        <div class="flex flex-col text-left px-[1.5rem] gap-[0.75rem]">
-          <h3
-            class="bg-custom-yellow py-[0.25rem] px-[0.75rem] rounded-[0.25rem] text-custom-black font-extrabold w-fit text-[0.875rem]">
-            Learning</h4>
-          <h4 class="text-[0.875rem] font-medium text-custom-black">Published 21 Dec 2023</h5>
-          <h1 class="font-extrabold text-custom-black text-[1.5rem] hover:cursor-pointer hover:text-custom-yellow">HTML
-            & CSS foundations</h1>
-          <h2 class="font-medium text-[1rem] text-custom-grey">These languages are the backbone of every website,
-            defining structure, content, and presentation.</h3>
+        <div class="flex flex-col p-[1.5rem] items-start gap-[0.75rem] text-custom-black">
+          <h3 class="py-[0.25rem] rounded-[0.25rem] px-[0.75rem] bg-custom-yellow text-[0.75rem] font-extrabold">
+            Learning</h3>
+          <h4 class="text-[0.75rem] font-semibold">Published 21 Dec 2023</h4>
+          <h1 class="text-[1.25rem] font-black hover:text-custom-yellow">HTML & CSS foundations</h1>
+          <h2 class="text-[0.875rem] text-custom-grey">These languages are the backbone of every website, defining
+            structure, content, and presentation.</h2>
         </div>
 
         <!-- Avatar & Name -->
-        <div role="contentinfo" class="flex px-[1.5rem] py-[1.5rem] items-center">
-          <img class="w-[2rem] h-[2rem] " src="./images/image-avatar.webp" alt="avatar of Greg Hooper">
-          <span class="ml-[.75rem] text-custom-black text-[0.875rem] font-extrabold">Greg Hooper</span>
+        <div role="contentinfo" class="flex items-center px-[1.5rem] pb-[1.5rem]">
+          <img class="w-[2rem] h-[2rem]" src="./images/image-avatar.webp" alt="Avatar of Greg Hooper">
+          <span class="ml-[0.75rem] text-[0.875rem] text-custom-black font-extrabold">Greg Hooper</span>
         </div>
       </div>
+
     </div>
   </main>
+
 </body>
 
 </html>
