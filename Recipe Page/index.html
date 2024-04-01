@@ -13,65 +13,60 @@
   <title>Recipe Page</title>
 </head>
 
-<body class="min-h-dvh flex justify-center">
-  <div class="md:w-[90rem] flex flex-col items-center  bg-eggshell large-padding justify-center">
-
+<body class="flex justify-center">
+  <div class="flex justify flex-col center large-padding md:bg-eggshell max-w-[90rem] h-dvh">
 
     <!-- White Card -->
 
-    <div class="py-[2.5rem] px-[2rem] md:p-[2.5rem] md:w-[46rem] bg-white w-[23.4375rem]">
+    <div class="bg-white md:p-[2.5rem] md:w-[46rem] md:rounded-[1.5rem] w-[23.4375rem]">
 
       <!-- Image -->
-      <div>
-        <img class="h-[10.6875rem] w-[23.4375rem] md:h-[18.75rem] md:w-[41rem]" src="images/image-omelette.jpeg"
-          alt="an omelette">
-      </div>
-
-      <!-- Description -->
-
-      <section class="flex flex-col items-center w-[19.4375rem] md:w-[41rem] md:items-start">
-        <h1 class="font-young text-[2.25rem] leading-[100%] text-dark-charcoal mb-[1.5rem] mt-[2.5rem] ">Simple Omelette
-          Recipe</h1>
-        <p class="font-normal text-wenge-brown font-outfit ">An easy and quick dish, perfect for any meal. This
-          classic omelette
-          combines beaten eggs cooked to perfection,
-          optionally filled with your choice of cheese, vegetables, or meats.</p>
-      </section>
+      <img class="md:rounded-[0.75rem] h-[10.6875rem] md:h-[18.75rem]" src="images/image-omelette.jpeg"
+        alt="an omlette">
       <main>
+        <div class="py-[2.5rem] px-[2rem]">
+          <section>
+            <!-- Description -->
 
-        <!-- Preparation Section -->
+            <h1 class="font-young text-[2.25rem] leading-[100%] text-dark-charcoal mb-[1.5rem] ">Simple Omelette
+              Recipe</h1>
+            <p class="font-normal text-wenge-brown font-outfit">An easy and quick dish, perfect for any meal. This
+              classic omelette
+              combines beaten eggs cooked to perfection,
+              optionally filled with your choice of cheese, vegetables, or meats.</p>
+          </section>
+          <!-- Preparation Section -->
 
-        <section class="font-outfit">
-          <div class="bg-snow my-[2rem] p-[1.5rem] rounded-[0.75rem]">
-            <h2 class="text-[1.25rem] text-dark-raspberry font-semibold leading-5 mb-[1rem]">Preparation Time</h2>
-            <ul
-              class="leading-6 text-wenge-brown list-disc custom-bullets ml-[0.5rem] marker:text-dark-raspberry space-y-[0.5rem]">
-              <li><span class="font-bold ml-[1rem]">Total:</span> Approximately 10<div class="ml-[1rem]">minutes</div>
-              </li>
-              <li><span class="font-bold ml-[1rem]">Preparation:</span> 5 minutes</li>
-              <li><span class="font-bold ml-[1rem]">Cooking:</span> 5 minutes</li>
-            </ul>
-          </div>
-        </section>
+          <section class="font-outfit">
+            <div class="bg-snow my-[2rem] p-[1.5rem] rounded-[0.75rem]">
+              <h2 class="text-[1.25rem] text-dark-raspberry font-semibold leading-5 mb-[1rem]">Preparation Time</h2>
+              <ul
+                class="leading-6 text-wenge-brown list-disc custom-bullets ml-[0.5rem] marker:text-dark-raspberry space-y-[0.5rem]">
+                <li><span class="font-bold ml-[1rem]">Total:</span> Approximately 10<div class="ml-[1rem]">minutes</div>
+                </li>
+                <li><span class="font-bold ml-[1rem]">Preparation:</span> 5 minutes</li>
+                <li><span class="font-bold ml-[1rem]">Cooking:</span> 5 minutes</li>
+              </ul>
+            </div>
+          </section>
 
-        <!-- Ingredients Section -->
+          <!-- Ingredients Section -->
 
-        <section>
-          <div class="flex flex-col">
-            <h2 class="text-brandy-red font-young text-[1.75rem] mb-[1.5rem]">Ingredients</h2>
-            <ul
-              class="leading-6 text-wenge-brown list-disc ml-[1.5rem] marker:text-brandy-red space-y-[0.5rem] font-outfit">
-              <li><span class="pl-[1rem]">2-3 large eggs</span></li>
-              <li><span class="pl-[1rem]">Salt, to taste</span></li>
-              <li><span class="ml-[1rem]">Pepper, to taste</span></li>
-              <li><span class="pl-[1rem]">1 tablespoon of butter or oil</span></li>
-              <li><span class="pl-[1rem]">Optional fillings: cheese, diced <span class="pl-[1rem]">vegetables</span>,
-                  cooked meats, herbs</span></li>
-            </ul>
-          </div>
-          <div class="border-b my-[2rem] border-white-coffee"></div>
-        </section>
-        <section>
+          <section>
+            <div class="flex flex-col">
+              <h2 class="text-brandy-red font-young text-[1.75rem] mb-[1.5rem]">Ingredients</h2>
+              <ul
+                class="leading-6 text-wenge-brown list-disc ml-[1.5rem] marker:text-brandy-red space-y-[0.5rem] font-outfit">
+                <li><span class="pl-[1rem]">2-3 large eggs</span></li>
+                <li><span class="pl-[1rem]">Salt, to taste</span></li>
+                <li><span class="ml-[1rem]">Pepper, to taste</span></li>
+                <li><span class="pl-[1rem]">1 tablespoon of butter or oil</span></li>
+                <li><span class="pl-[1rem]">Optional fillings: cheese, diced <span class="pl-[1rem]">vegetables</span>,
+                    cooked meats, herbs</span></li>
+              </ul>
+            </div>
+            <div class="border-b my-[2rem] border-white-coffee"></div>
+          </section>
           <div>
 
             <!-- Instructions Section -->
@@ -99,37 +94,39 @@
                 needed.</li>
             </ol>
           </div>
-        </section>
-        <div class="border-b my-[2rem] border-white-coffee"></div>
+          </section>
+          <div class="border-b my-[2rem] border-white-coffee"></div>
+          <section>
 
-        <!-- Nutrition Section -->
-        <section>
-          <div class="font-outfit text-wenge-brown ">
-            <h2 class="text-brandy-red font-young text-[1.75rem]">Nutrition</h2>
-            <h3 class="text-wenge-brown py-[1.5rem]">The table below shows nutritional values per serving without the
-              additional fillings.</h3>
-            <div>
-              <div class="flex px-[2rem] py-[0.75rem] border-b border-white-coffee ">
-                <h4 class="w-[7.21875rem] md:w-[18rem]">Calories</h4>
-                <h4 class="text-brandy-red font-extrabold ml-[1rem]">277kcal</h4>
-              </div>
-              <div class="flex px-[2rem] py-[0.75rem] border-b border-white-coffee">
-                <h4 class="w-[7.21875rem] md:w-[18rem]">Carbs</h4>
-                <h4 class="text-brandy-red font-extrabold ml-[1rem]">0g</h4>
-              </div>
-              <div class="flex px-[2rem] py-[0.75rem] border-b border-white-coffee">
-                <h4 class="w-[7.21875rem] md:w-[18rem]">Protein</h4>
-                <h4 class="text-brandy-red font-extrabold ml-[1rem]">20g</h4>
-              </div>
-              <div class="flex px-[2rem] py-[0.75rem]">
-                <h4 class="w-[7.21875rem] md:w-[18rem]">Fat</h4>
-                <h4 class="text-brandy-red font-extrabold ml-[1rem]">22g</h4>
-              </div>
-            </div>
-        </section>
+            <!-- Nutrition Section -->
+            <section>
+              <div class="font-outfit text-wenge-brown ">
+                <h2 class="text-brandy-red font-young text-[1.75rem]">Nutrition</h2>
+                <h3 class="text-wenge-brown py-[1.5rem]">The table below shows nutritional values per serving without
+                  the
+                  additional fillings.</h3>
+                <div>
+                  <div class="flex px-[2rem] py-[0.75rem] border-b border-white-coffee ">
+                    <h4 class="w-[7.21875rem] md:w-[18rem]">Calories</h4>
+                    <h4 class="text-brandy-red font-extrabold ml-[1rem]">277kcal</h4>
+                  </div>
+                  <div class="flex px-[2rem] py-[0.75rem] border-b border-white-coffee">
+                    <h4 class="w-[7.21875rem] md:w-[18rem]">Carbs</h4>
+                    <h4 class="text-brandy-red font-extrabold ml-[1rem]">0g</h4>
+                  </div>
+                  <div class="flex px-[2rem] py-[0.75rem] border-b border-white-coffee">
+                    <h4 class="w-[7.21875rem] md:w-[18rem]">Protein</h4>
+                    <h4 class="text-brandy-red font-extrabold ml-[1rem]">20g</h4>
+                  </div>
+                  <div class="flex px-[2rem] py-[0.75rem]">
+                    <h4 class="w-[7.21875rem] md:w-[18rem]">Fat</h4>
+                    <h4 class="text-brandy-red font-extrabold ml-[1rem]">22g</h4>
+                  </div>
+                </div>
+            </section>
+        </div>
       </main>
     </div>
   </div>
-</body>
 
-</html>
+</body>
