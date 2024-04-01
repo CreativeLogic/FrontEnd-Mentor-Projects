@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+.large-padding {
+  padding: 7.6875rem 22rem 7.75rem 22rem;
+}
+
+@theme {
+  --font-family-young: 'Young Serif', Georgia;
+  --font-family-outfit: 'Outfit', sans-serif;
+
+  --color-brandy-red: #854632;
+  --color-dark-charcoal: #312e2c;
+  --color-dark-raspberry: #7a284e;
+  --color-snow: #fff7fb;
+  --color-wenge-brown: #5f564d;
+  --color-brandy-red: #854632;
+  --color-white-coffee: #e3ddd7;
+  --color-eggshell: #f3e5d7;
+}
