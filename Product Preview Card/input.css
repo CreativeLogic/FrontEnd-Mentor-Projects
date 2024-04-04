@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+.small-padding {
+  padding: 1.75rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .large-padding {
+    padding: 10.9375rem 26.25rem;
+  }
+}
+
+@theme {
+  --font-family-fraunces: 'Fraunces', serif;
+  --font-family-montserrat: 'Montserrat', sans-serif;
+
+  --color-aurometal: #6c7289;
+  --color-cream: #f2eae2;
+  --color-aquamarine: #3d8168;
+  --color-gunmetal: #1c232b;
+  --color-deepaquamarine: #1a4032;
+}
