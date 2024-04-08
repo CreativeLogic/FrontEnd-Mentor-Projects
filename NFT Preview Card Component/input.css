@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+
+.borderw {
+    border-color: red;
+    border-width: 1px;
+}
+
 @theme {
     
     --font-family-outfit: "Outfit", sans-serif;
