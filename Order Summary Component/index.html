@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <script defer src="https://kit.fontawesome.com/66cd2b0473.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="./dist/app.css">
+  <title>Summary Component</title>
+</head>
+
+<body class="flex flex-col min-w-[23.4375rem] items-center font-redhat h-dvh text-[#717FA6] ">
+
+  <!-- Main Container -->
+  <div class="max-w-[90rem]  main bg-[#E0E8FF] flex items-center justify-center  w-full h-[56.25rem]">
+
+    <!-- Card Container -->
+    <article class="flex rounded-[1.25rem] flex-col max-w-[28.125rem] custom-shadow">
+
+      <!-- Hero Image-->
+      <header>
+        <img class="rounded-t-[1.25rem]" src="images/illustration-hero.svg" alt="">
+      </header>
+
+      <!-- Text Content -->
+      <main
+        class="flex flex-col items-center text-center bg-white  rounded-b-[1.25rem] px-[3rem] pb-[3rem] pt-[2.5rem]">
+        <h1 class="text-[#1F2E55] text-[1.8rem] font-black">Order Summary</h1>
+        <p class="leading-[1.625rem] font-medium pt-[1.06rem]">You can now listen to millions of songs, audiobooks, and
+          podcasts on any device
+          anywhere you like!
+        </p>
+
+        <!-- Plan  -->
+        <div
+          class="flex w-full justify-between  bg-[#F7F9FF] mt-[1.25rem] rounded-[0.6875rem] p-[1.5rem]  mb-[2rem] items-center plan">
+          <div class="inline-flex annual gap-[1.25rem]">
+            <img src="images/icon-music.svg" alt="">
+            <div>
+              <p class="font-black text-[#1F2E55]">Annual Plan</p>
+              <p class="font-medium ">$59.99/year</p>
+            </div>
+          </div>
+          <a class="underline text-[#382AE1] hover:text-[#766CF1] text-[0.875rem]  font-extrabold" href="#">Change</a>
+
+        </div>
+
+        <!-- Payment -->
+        <div class="flex flex-col gap-[2rem] payments text-[0.9375rem]">
+          <button
+            class="bg-[#382AE1] px-[6.3rem] rounded-[0.6875rem] py-[.95em] font-extrabold custom-shadow text-white hover:cursor-pointer hover:bg-[#766CF1] payment ">Proceed
+            to Payment</button>
+          <a class="font-black hover:text-[#1F2E55]" href="#">Cancel Order</a>
+        </div>
+      </main>
+    </article>
+  </div>
+
+  <!-- Attribution -->
+  <div
+    class="flex text-black flex-col items-center justify-center font-extrabold tracking-tight mt-[2.7rem] text-[1.2rem]">
+    <p class="px-[0.27rem]">
+      Challenge by <a class=" hover:text-[#777]" href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank">Frontend
+        Mentor</a>.
+    </p>
+    <p>
+      Coded by <a href="https://github.com/CreativeLogic/" target="_blank"><i class="fab fa-github"></i><span
+          class="hover:text-[#777]  hover:cursor-pointer"><span class="pl-[0.27rem]">CreativeLogic</span></span>.</a>
+    </p>
+  </div>
+</body>
