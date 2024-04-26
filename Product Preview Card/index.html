@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <script defer src="https://kit.fontawesome.com/66cd2b0473.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Product preview card component</title>
+</head>
+
+<body>
+  <main>
+    <picture>
+      <!-- Desktop image for wider screens -->
+      <source srcset="./images/image-product-desktop.jpg" media="(min-width: 427px)">
+      <!-- Default mobile image -->
+      <img class="desktop-img" src="./images/image-product-mobile.jpg" alt="Chanel perfume and leaves">
+    </picture>
+
+    <!-- Text Content -->
+    <div class="text-content">
+      <h2>Perfume</h2>
+      <h1>Gabrielle Essence Eau De Parfum</h1>
+      <p>
+        A floral, solar and voluptuous interpretation composed by Olivier Polge,
+        Perfumer-Creator for the House of CHANEL.
+      </p>
+
+      <!-- Prices & Cart -->
+      <div class="prices">
+        <p class="discount">$149.99</p>
+        <p class="original-price">$169.99</p>
+      </div>
+
+      <div class="cart-btn">
+        <img src="./images/icon-cart.svg" alt="shopping cart icon">
+        <a href="#">Add to Cart</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Attribution -->
+  <footer>
+    <div class="attribution">
+      <p>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          Frontend
+          Mentor.
+        </a>
+      </p>
+      <p>
+        Coded by <a href="https://github.com/CreativeLogic/" target="_blank"><i class="fab fa-github"></i><span><span
+              class="pl-[0.29rem]"> CreativeLogic</span></span>.</a>
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
