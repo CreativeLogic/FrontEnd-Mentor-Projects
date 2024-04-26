@@ -58,7 +58,6 @@ body {
   align-items: center;
   max-width: 90rem;
   min-height: 50rem;
-  border: 1px solid red;
 
   @media (max-width: 425px) {
     justify-content: flex-start;
@@ -75,7 +74,6 @@ body {
   border-radius: 1.25rem;
   background-color: white;
   box-shadow: var(--shadow-custom);
-  border: 1px solid red;
   position: relative;
 
   img {
