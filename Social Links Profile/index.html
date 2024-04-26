@@ -1,52 +1,147 @@
-<!DOCTYPE html>
-<html lang="en">
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <script defer src="https://kit.fontawesome.com/66cd2b0473.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
+* {
+  margin: 0;
+}
 
-  <title>Frontend Mentor | Social links profile</title>
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
 
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
 
-</head>
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
 
-<body>
-  <main class="card">
-    <img src="./assets/images/avatar-jessica.jpeg" alt="avatar of Jessica Randall">
-    <h1>Jessica Randall</h1>
-    <h2>London, United Kingdom</h2>
-    <h3>"Front-end developer and avid reader."</h3>
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
 
-    <!-- Social Links -->
-    <div class="links">
-      <a href="">GitHub</a>
-      <a href="">Frontend Mentor</a>
-      <a href="">LinkedIn</a>
-      <a href="">Twitter</a>
-      <a href="">Instagram</a>
-    </div>
-  </main>
-  
-  <!-- Attribution -->
-  <footer>
-    <div class="attribution">
-      <p>
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
-          Mentor.</a>
-      </p>
-      <p>
-        Coded by <a href="https://github.com/CreativeLogic/" target="_blank"><i class="fab fa-github"></i><span><span
-              class="pl-[0.29rem]"> CreativeLogic</span></span>.</a>
-      </p>
-    </div>
-  </footer>
+:root {
+  --color-bg: #141414;
+  --color-card-bg: #1f1f1f;
+  --color-text: #fff;
+  --color-text-accent: #c4f82a;
+  --color-button-bg: #333;
+  --font-body: "Inter", sans-serif;
+}
 
-</body>
+body {
+  max-width: 90rem;
+  background-color: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10.875rem 0rem 10.9375rem 0rem;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  text-align: center;
+  line-height: 1.3125rem;
+  color: var(--color-text);
 
-</html>
+  @media (max-width: 26.5625em) {
+    min-width: 20.4375rem;
+    padding: 7.25rem 1.5rem 7.3125rem 1.5rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem;
+    min-width: 24rem;
+
+    background-color: var(--color-card-bg);
+    border-radius: 0.75rem;
+
+    @media (max-width: 26.5625em) {
+      min-width: 20.4375rem;
+      padding: 1.5rem;
+    }
+
+    img {
+      max-width: 5.5rem;
+      border-radius: 100%;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 2.25rem;
+      margin: 1.5rem 0 0.25rem 0;
+    }
+
+    h2 {
+      font-size: 0.875rem;
+      color: var(--color-text-accent);
+      font-weight: 700;
+    }
+
+    h3 {
+      margin: 1.5rem 0;
+      font-size: 0.875rem;
+      font-weight: 400;
+    }
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  gap: 1rem;
+  width: 100%;
+
+  & a {
+    text-decoration: none;
+    color: var(--color-text);
+    border-radius: 0.5rem;
+    background-color: var(--color-button-bg);
+    padding: 0.75rem;
+    transition: background-color 0.5s ease;
+  }
+
+  a:hover {
+    background-color: var(--color-text-accent);
+  }
+}
+
+.attribution {
+  margin-top: 1rem;
+
+  & a {
+    text-decoration: none;
+    color: white;
+    transition: transform 0.5s ease;
+  }
+
+  & a:hover {
+    display: inline-block;
+    color: var(--color-text-accent);
+    transform: scale(1.02);
+  }
+}
