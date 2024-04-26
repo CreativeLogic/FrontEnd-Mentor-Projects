@@ -108,30 +108,36 @@ article {
   }
 }
 
-.attribution {
-  color: black;
-  letter-spacing: 0.2px;
-  text-align: center;
-  line-height: 1.4;
-  position: absolute;
-  top: 80%;
-  margin-top: 1rem;
-  font-weight: 700;
+footer {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
 
-  @media (max-width: 23.4375em) {
-    top: 70.9%;
-  }
+  .attribution {
+    color: black;
+    letter-spacing: 0.2px;
+    text-align: center;
+    line-height: 1.4;
+    position: absolute;
+    top: 80%;
+    margin-top: 1rem;
+    font-weight: 700;
 
-  a {
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.5s ease;
-  }
+    @media (max-width: 23.4375em) {
+      top: 70.9%;
+    }
 
-  a:hover,
-  a:focus {
-    color: var(--color-text);
-    transform: scale(1.02);
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.5s ease;
+    }
+
+    a:hover,
+    a:focus {
+      color: var(--color-text);
+      transform: scale(1.02);
+    }
   }
 }
