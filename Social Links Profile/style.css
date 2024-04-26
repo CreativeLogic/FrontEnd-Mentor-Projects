@@ -45,7 +45,6 @@ h6 {
   --color-text: #fff;
   --color-text-accent: #c4f82a;
   --color-button-bg: #333;
-  --shadow-custom: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
   --font-body: "Inter", sans-serif;
 }
 
@@ -53,7 +52,9 @@ body {
   max-width: 90rem;
   background-color: var(--color-bg);
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
   padding: 10.875rem 0rem 10.9375rem 0rem;
   font-family: var(--font-body);
@@ -90,7 +91,8 @@ body {
     h1 {
       font-size: 1.5rem;
       font-weight: 600;
-      margin: 1.5rem 0 1rem 0;
+      line-height: 2.25rem;
+      margin: 1.5rem 0 0.25rem 0;
     }
 
     h2 {
@@ -114,7 +116,7 @@ body {
   gap: 1rem;
   width: 100%;
 
-  a {
+  & a {
     text-decoration: none;
     color: var(--color-text);
     border-radius: 0.5rem;
@@ -125,5 +127,21 @@ body {
 
   a:hover {
     background-color: var(--color-text-accent);
+  }
+}
+
+.attribution {
+  margin-top: 1rem;
+
+  & a {
+    text-decoration: none;
+    color: white;
+    transition: transform 0.5s ease;
+  }
+
+  & a:hover {
+    display: inline-block;
+    color: var(--color-text-accent);
+    transform: scale(1.02);
   }
 }
