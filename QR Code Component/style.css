@@ -59,7 +59,7 @@ body {
   max-width: 90rem;
   min-height: 50rem;
 
-  @media (max-width: 425px) {
+  @media (max-width: 26.5625em) {
     justify-content: flex-start;
     padding-top: 5.31rem;
   }
