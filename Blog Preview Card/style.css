@@ -79,6 +79,7 @@ main {
     border-radius: 0.25rem;
     color: var(--color-text-body);
     font-weight: 800;
+    line-height: 1.3125rem;
     padding: 0.25rem 0.75rem;
     background-color: var(--color-bg);
     margin-top: 0.75rem;
@@ -87,6 +88,7 @@ main {
   h1 {
     font-size: 1.5rem;
     font-weight: 800;
+    line-height: 2.25rem;
 
     & a {
       color: inherit;
