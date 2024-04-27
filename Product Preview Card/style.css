@@ -69,7 +69,7 @@ main {
   margin: 0 auto;
   width: 21.4375rem;
   border-radius: 0.625rem;
-  @media (min-width: 26.6875em) {
+  @media (min-width: 39.8125em) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-width: 37.5rem;
@@ -83,7 +83,7 @@ desktop-img {
   border-top-right-radius: 0.625rem;
 }
 
-@media (min-width: 26.6875em) {
+@media (min-width: 39.8125em) {
   .desktop-img {
     border-radius: 0;
     border-top-left-radius: 0.625rem;
@@ -104,7 +104,7 @@ desktop-img {
   font-weight: 500;
   color: var(--color-text);
 
-  @media (min-width: 26.6875em) {
+  @media (min-width: 39.8125em) {
     border-radius: 0;
     border-top-right-radius: 0.625rem;
     border-bottom-right-radius: 0.625rem;
