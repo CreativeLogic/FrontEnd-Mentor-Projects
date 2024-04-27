@@ -46,6 +46,7 @@ h6 {
   --color-text: #6c7289;
   --color-text-heading: #1c232b;
   --color-pricing-cart: #3d8168;
+  --color-btn-hover: #1a4032;
   --font-body: "Montserrat", sans-serif;
   --font-accent: "Fraunces", serif;
 }
@@ -77,7 +78,7 @@ main {
   }
 }
 
-img {
+desktop-img {
   border-top-left-radius: 0.625rem;
   border-top-right-radius: 0.625rem;
 }
@@ -165,12 +166,18 @@ img {
   background-color: var(--color-pricing-cart);
   width: 100%;
   border-radius: 0.5rem;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--color-btn-hover);
+  }
 
   & a {
     text-decoration: none;
     color: white;
     text-align: center;
-    padding: 1rem 1rem;
+    padding: 0.9rem 1rem;
     font-size: 0.875rem;
     font-weight: 700;
     line-height: normal;
