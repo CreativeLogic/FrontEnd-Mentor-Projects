@@ -51,14 +51,17 @@ header {
     font-weight: 400;
     line-height: 1.5625rem;
     opacity: 0.5;
-    margin-bottom: 4.75rem;
     max-width: 33.75rem;
-
     margin: 0 auto;
+    color: red;
+    margin-bottom: 4.75rem;
 
     @media (min-width: 40.75em) {
       text-align: center;
       letter-spacing: 0.0065rem;
+      margin-bottom: 0;
+      border: 1px solid red;
+      
     }
   }
 }
