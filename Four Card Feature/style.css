@@ -21,6 +21,7 @@ header {
 
   @media (min-width: 40.75em) {
     max-width: 90rem;
+    padding-top: 5rem;
   }
 
   & h1 {
