@@ -1,130 +1,45 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
-* {
-  margin: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <script defer src="https://kit.fontawesome.com/66cd2b0473.js" crossorigin="anonymous"></script>
 
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
+    <link rel="stylesheet" href="style.css">
+    <title>QR Code Component</title>
+</head>
 
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
+<body>
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
+    <!-- Main Container -->
+    <main>
+        <div class="content-container">
+            <img src="./images/image-qr-code.png" alt="qr code leading to the frontend mentor website">
+            <h1>Improve your front-end skills by building projects</h1>
+            <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+        </div>
+    </main>
 
-:root {
-  --color-bg: #d5e1ef;
-  --color-text: #1f314f;
-  --color-text-accent: #7d889e;
-  --shadow-custom: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
-  --font-body: "Outfit", sans-serif;
-}
+    <!-- Attribution -->
+    <footer>
+        <div class="attribution">
+            <p>
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+                    Mentor.</a>
+            </p>
+            <p>
+                Coded by <a href="https://github.com/CreativeLogic/" target="_blank"><i
+                        class="fab fa-github"></i><span><span class="pl-[0.29rem]"> CreativeLogic</span></span>.</a>
+            </p>
+        </div>
+    </footer>
 
-body {
-  font-family: var(--font-body);
-  line-height: normal;
-  background-color: var(--color-bg);
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 90rem;
-  min-height: 50rem;
+</body>
 
-  @media (max-width: 26.5625em) {
-    justify-content: flex-start;
-    padding-top: 5.31rem;
-  }
-}
-
-.content-container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 20rem;
-  margin: 0 auto;
-  padding: 1rem;
-  text-align: center;
-  border-radius: 1.25rem;
-  background-color: white;
-  box-shadow: var(--shadow-custom);
-  position: relative;
-
-  img {
-    border-radius: 0.625rem;
-    max-width: 18rem;
-  }
-
-  h1 {
-    font-size: 1.375rem;
-    color: var(--color-text);
-    font-weight: 700;
-    margin: 1.5rem 0 1rem 0;
-    max-width: 18rem;
-  }
-
-  p {
-    font-size: 0.9375rem;
-    color: var(--color-text-accent);
-    padding-bottom: 1.5rem;
-    max-width: 16rem;
-  }
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-}
-
-.attribution {
-  color: black;
-  letter-spacing: 0.2px;
-  justify-content: center;
-  text-align: center;
-  line-height: 1.4;
-  margin-top: 1.2rem;
-  font-weight: 700;
-  position: absolute;
-}
-
-a {
-  display: inline-block;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.5s ease;
-}
-
-a:hover,
-a:focus {
-  color: var(--color-text);
-  transform: scale(1.02);
-}
+</html>
