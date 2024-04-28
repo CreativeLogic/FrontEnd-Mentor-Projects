@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  font-size: 1rem;
+}
+
+:root {
+  --color-bg: #fafafa;
+  --color-card-bg: #fff;
+  --color-text: #4d4f62;
+  --color-border-supervisor: #44d3d2;
+  --color-border-team-builder: #ea5454;
+  --color-border-karma: #fcae4a;
+  --color-border-calculator: #377fd2;
+
+  --custom-card-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  --font-main: "Poppins", sans-serif;
+}
