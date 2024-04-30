@@ -32,7 +32,7 @@ body {
   }
 }
 
-.grid-container {
+article {
   display: grid;
   margin: 0 auto;
   max-width: 39.6875rem;
