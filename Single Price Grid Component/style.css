@@ -61,6 +61,9 @@ header {
   background-color: var(--color-header-bg);
   font-weight: 700;
   padding: 2.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+
   @media (max-width: 48em) {
     padding: 1.75rem 1.5rem 2rem 1.5rem;
   }
@@ -107,9 +110,11 @@ header {
 .subscription {
   background-color: var(--color-subscription-bg);
   padding: 2.5rem;
+  border-bottom-left-radius: 0.5rem;
   color: var(--color-text-primary);
   @media (max-width: 48rem) {
     padding: 1.5rem;
+    border-bottom-left-radius: 0;
   }
 
   .price {
@@ -146,7 +151,7 @@ header {
     font-weight: 400;
     letter-spacing: -0.0125rem;
     line-height: 1.625rem;
-    margin-bottom: 1.62rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -170,9 +175,11 @@ header {
 .why-us {
   background-color: var(--color-why-us-bg);
   padding: 2.5rem;
+  border-bottom-right-radius: 0.5rem;
   color: var(--color-text-primary);
   @media (max-width: 48rem) {
     padding: 1.5rem;
+    border-bottom-left-radius: 0.5rem;
   }
 
   & h2 {
