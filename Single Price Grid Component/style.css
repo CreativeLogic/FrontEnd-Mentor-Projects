@@ -214,13 +214,13 @@ body {
   text-align: center;
   left: 50%;
   top: 70%;
-  bottom: 30%;
-  @media (max-width: 48em) {
-    bottom: 15%;
-  }
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
   width: 50%;
   font-weight: 700;
+
+  @media (max-width: 48em) {
+    top: 68%;
+  }
 
   & a {
     text-decoration: none;
