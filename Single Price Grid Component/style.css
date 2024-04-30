@@ -212,10 +212,11 @@ article {
   flex-direction: column;
   margin-top: 0.5rem;
   text-align: center;
-  left: 50%;
-  top: 77%;
-  transform: translate(-50%);
-  width: 50%;
+  left: 0;
+  bottom: 0;
+  justify-content: center;
+
+  width: 100%;
   font-weight: 700;
 
   & a {
