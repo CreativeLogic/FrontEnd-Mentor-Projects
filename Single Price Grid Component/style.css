@@ -2,7 +2,7 @@
 
 :root {
   --color-body-bg: #e6eff5;
-  --color-header-bg: #fff;
+  --color-community-bg: #fff;
   --color-subscription-bg: #2ab3b1;
   --color-why-us-bg: #4abebd;
   --color-h1-text: #2ab3b1;
@@ -15,6 +15,9 @@
 }
 
 body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
   background-color: var(--color-body-bg);
   max-width: 90rem;
   width: 95%;
@@ -25,27 +28,24 @@ body {
 
 .grid-container {
   display: grid;
-  justify-content: center;
   margin: 0 auto;
   max-width: 39.6875rem;
-  padding-top: 10.19rem;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "header header"
+    "community community"
     "subscription why-us";
 
   @media (max-width: 48em) {
     max-width: 19.4375rem;
-    padding-top: 4.5rem;
     grid-template-columns: minmax(19.4375rem, 1fr);
     grid-template-areas:
-      "header"
+      "community"
       "subscription"
       "why-us";
   }
 
-  header {
-    grid-area: header;
+  .community {
+    grid-area: community;
   }
 
   .subscription {
@@ -57,8 +57,8 @@ body {
   }
 }
 
-header {
-  background-color: var(--color-header-bg);
+.community {
+  background-color: var(--color-community-bg);
   font-weight: 700;
   padding: 2.5rem;
   border-top-left-radius: 0.5rem;
