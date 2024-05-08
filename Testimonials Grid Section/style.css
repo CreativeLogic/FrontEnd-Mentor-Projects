@@ -24,13 +24,17 @@ body {
   font-family: var(--font-main);
 }
 
+main {
+  padding-top: 4.4rem;
+  position: relative;
+}
+
 .cards {
   max-width: 69.38rem;
   min-height: 35.75rem;
   display: grid;
   gap: 1.5rem 1.88rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  position: relative;
   margin: 0 1.5rem;
   grid-template-areas:
     "c-1 c-1 c-2 c-3"
@@ -79,6 +83,13 @@ body {
       @media (max-width: 34.1875em) {
         margin-right: 1rem;
       }
+    }
+
+    & h1 {
+      font-size: 0.8125rem;
+      font-weight: 500;
+      line-height: 0.8125rem;
+      margin-bottom: 0.2rem;
     }
   }
 
@@ -173,7 +184,8 @@ body {
   font-weight: 700;
   left: 0;
   right: 0;
-  margin: auto;
+  bottom: 95%;
+  margin: 0.2rem auto;
 
   & a {
     display: inline-block;
