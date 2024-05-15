@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,96 +10,48 @@
       rel="stylesheet"
     />
     <link
-      rel="shortcut icon"
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
       href="./images/favicon-32x32.png"
-      type="image/x-icon"
     />
-    <link rel="stylesheet" href="./dist/app.css" />
-    <title>Stats Preview Card</title>
-    <style>
-      @media (max-width: 768px) {
-        .card {
-          flex-direction: column !important;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Stats preview card component</title>
   </head>
-  <main>
-    <article
-      class="mx-auto max-w-[90rem] bg-[#0A0C1C] px-[10.31rem] py-[11.0625rem]"
-    >
-      <!-- Card -->
-
-      <div
-        class="font-inter card custom-shadow flex max-h-[27.875rem] overflow-hidden rounded-[0.5rem] text-white"
-      >
-        <!-- Text Container -->
-
-        <div class="flex flex-col bg-[#1B1937] p-[4.5rem] text-left">
-          <!-- Text Content -->
-
-          <div class="w-[25.1875rem]">
-            <h1 class="text-[2.25rem] font-semibold leading-[2.75rem]">
-              Get <span class="font-bold text-[#AB5CDB]">insights</span> that
-              help your business grow.
-            </h1>
-            <div class="w-[23.375rem]">
-              <p
-                class="pt-[1.56rem] text-[0.9375rem] leading-[1.5625rem] opacity-[0.75]"
-              >
-                Discover the benefits of data analytics and make better
-                decisions regarding revenue, customer experience, and overall
-                efficiency.
-              </p>
-
-              <!-- Stats -->
-
-              <div class="mt-[4.5rem] flex justify-between">
-                <div>
-                  <p class="text-[1.5rem] font-bold">10k+</p>
-                  <p
-                    class="font-lexenddeca text-[0.75rem] uppercase tracking-[0.0625rem] opacity-[0.6]"
-                  >
-                    companies
-                  </p>
-                </div>
-                <div>
-                  <p class="text-[1.5rem] font-bold">314</p>
-                  <p
-                    class="font-lexenddeca text-[0.75rem] uppercase tracking-[0.0625rem] opacity-[0.6]"
-                  >
-                    templates
-                  </p>
-                </div>
-                <div>
-                  <p class="text-[1.5rem] font-bold">12M+</p>
-                  <p
-                    class="font-lexenddeca text-[0.75rem] uppercase tracking-[0.0625rem] opacity-[0.6]"
-                  >
-                    Queries
-                  </p>
-                </div>
-              </div>
-            </div>
+  <body>
+    <section>
+      <div class="text-content">
+        <h2>Get <span>insights</span> that help your business grow.</h2>
+        <p>
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+        <div>
+          <div>
+            <p>10k+</p>
+            <p>companies</p>
+          </div>
+          <div>
+            <p>314</p>
+            <p>templates</p>
+          </div>
+          <div>
+            <p>12M+</p>
+            <p>queries</p>
           </div>
         </div>
-
-        <!-- Image -->
-
-        <div class="bg-[#AB5CDB]">
-          <picture class="opacity-[0.7511] mix-blend-multiply">
-            <source
-              media="(max-width: 768px)"
-              srcset="./images/image-header-mobile.jpg"
-            />
-            <img
-              class="h-[100%] w-[54.625rem] object-cover"
-              src="./images/image-header-desktop.jpg"
-              alt="pepple working with one person on a laptop"
-            />
-          </picture>
-        </div>
       </div>
-    </article>
-  </main>
+      <picture class="image-wrapper">
+        <source
+          media="(max-width: 1140px)"
+          srcset="./images/image-header-mobile.jpg"
+        />
+        <img
+          src="./images/image-header-desktop.jpg"
+          alt="Description of the image"
+        />
+      </picture>
+    </section>
+  </body>
 </html>
