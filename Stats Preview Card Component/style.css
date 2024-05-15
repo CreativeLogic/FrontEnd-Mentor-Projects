@@ -1,0 +1,126 @@
+@import url('./reset.css');
+
+:root {
+  --color-bg-blue: #0a0c1c;
+  --color-card-blue: #1b1937;
+  --color-white: #fff;
+  --color-purple: #ab5cdb;
+  --font-main: 'Inter', sans-serif;
+  --font-accent: 'Lexend Deca', sans-serif;
+}
+
+body {
+  margin: auto;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-bg-blue);
+
+  @media (width <= 1140px) {
+    align-items: flex-start;
+    padding-top: 88px;
+  }
+}
+
+section {
+  max-width: 1110px;
+  display: grid;
+  grid-template-columns: 540px 1fr;
+  text-align: left;
+  background-color: var(--color-card-blue);
+  border-radius: 8px;
+  font-family: var(--font-main);
+
+  @media (width <= 1140px) {
+    grid-template-columns: 327px;
+    text-align: center;
+  }
+
+  .image-wrapper {
+    background-color: #ab5cdb;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    @media (width <= 1140px) {
+      border-bottom-right-radius: 0;
+      border-top-left-radius: 8px;
+    }
+  }
+
+  & img {
+    mix-blend-mode: multiply;
+    opacity: 0.7511;
+
+    @media (width <= 1140px) {
+      order: 1;
+      max-height: 240px;
+      width: 100%;
+    }
+  }
+
+  & .text-content {
+    color: var(--color-white);
+    padding: 71px 72px 0;
+    font-weight: 400;
+
+    @media (width <= 1140px) {
+      order: 2;
+      padding: 40px 32px 32px;
+    }
+
+    & > div {
+      display: flex;
+      gap: 64px;
+
+      @media (width <= 1140px) {
+        flex-direction: column;
+        gap: 24px;
+      }
+    }
+
+    & h2 {
+      margin-bottom: 25px;
+
+      @media (width <= 1140px) {
+        margin-right: -4px;
+      }
+
+      font-weight: 700;
+      font-size: clamp(1.75rem, 1.5739rem + 0.7512vw, 2.25rem);
+      line-height: clamp(2rem, 1.7359rem + 1.1268vw, 2.75rem);
+
+      & span {
+        color: var(--color-purple);
+      }
+    }
+
+    & > p:first-of-type {
+      max-width: 374px;
+      font-size: 0.9375rem;
+      line-height: 1.5625rem;
+      opacity: 0.75;
+      margin-bottom: 72px;
+
+      @media (width <= 1140px) {
+        margin-bottom: 40px;
+      }
+    }
+
+    & div > p:first-child {
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 2px;
+    }
+
+    & div > p:nth-child(2) {
+      opacity: 0.6;
+      line-height: 1.5625rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+    }
+  }
+}
+
