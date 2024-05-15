@@ -26,7 +26,7 @@ body {
 section {
   max-width: 1110px;
   display: grid;
-  grid-template-columns: 540px 1fr;
+  grid-template-columns: 1fr 540px;
   text-align: left;
   background-color: var(--color-card-blue);
   border-radius: 8px;
