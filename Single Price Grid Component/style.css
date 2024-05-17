@@ -1,4 +1,4 @@
-@import url("reset.css");
+@import url('reset.css');
 
 :root {
   --color-white: #fff;
@@ -32,10 +32,14 @@ main {
 article {
   display: flex;
   flex-direction: column;
+  border: 1px solid red;
 
   @media (width >=425px) {
     display: grid;
     max-width: 625px;
+    max-height: 475px;
+    height: 475px;
+    flex-shrink: 0;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -46,7 +50,7 @@ article {
     padding: 24px;
 
     @media (width >= 425px) {
-      padding: 40px;
+      padding: 40px 40px 35px;
       max-width: 635px;
     }
 
@@ -58,6 +62,8 @@ article {
       @media (width >= 425px) {
         grid-column: 1 / -1;
         padding: 40px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
       }
 
       & h2 {
