@@ -1,59 +1,179 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+@import url('reset.css');
 
-    <link rel="stylesheet" href="style.css" />
+:root {
+  --color-white: #fff;
+  --color-cyan: #2ab3b1;
+  --color-light-green: #c0df33;
+  --color-bg-gray: #e6eff5;
+  --color-gray: #9aa7be;
+  --btn-shadow: 0px 10px 10px 0px rgb(0 0 0 / 10%);
+  --font-main: 'Karla', sans-serif;
+}
 
-    <title>Frontend Mentor | Single Price Grid Component</title>
-  </head>
-  <body>
-    <main>
-      <article>
-        <section>
-          <h2>Join our community</h2>
-          <h3>30-day, hassle-free money back guarantee</h3>
-          <p>
-            Gain access to our full library of tutorials along with expert code
-            reviews. Perfect for any developers who are serious about honing
-            their skills.
-          </p>
-        </section>
-        <section>
-          <h3>Monthly Subscription</h3>
-          <div class="price">
-            <p>&dollar;29</p>
-            <p>per month</p>
-          </div>
-          <p>Full access for less than &dollar;1 a day</p>
-          <a href="#">Sign Up</a>
-        </section>
-        <section>
-          <h3>Why Us</h3>
-          <ul>
-            <li>Tutorials by industry experts</li>
-            <li>Peer &amp; expert code review</li>
-            <li>Coding exercises</li>
-            <li>Access to our GitHub repos</li>
-            <li>Community forum</li>
-            <li>Flashcard decks</li>
-            <li>New videos every week</li>
-          </ul>
-        </section>
-      </article>
-    </main>
-  </body>
-</html>
+body {
+  max-width: 1440px;
+  min-height: 100dvh;
+  margin: auto;
+  background-color: var(--color-bg-gray);
+  font-family: var(--font-main);
+  padding-top: 72px;
+
+  @media (width >= 425px) {
+    align-content: center;
+    padding-top: 0;
+  }
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+
+  @media (width >=425px) {
+    display: grid;
+    max-width: 625px;
+    max-height: 475px;
+    height: 475px;
+    flex-shrink: 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  & section {
+    max-width: 311px;
+    color: var(--color-white);
+    background-color: var(--color-white);
+    padding: 24px;
+
+    @media (width >= 425px) {
+      padding: 40px 40px 39px;
+      max-width: 635px;
+    }
+
+    &:first-of-type {
+      padding: 28px 24px 32px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+
+      @media (width >= 425px) {
+        grid-column: 1 / -1;
+        padding: 40px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+
+      & h2 {
+        font-size: clamp(1.25rem, 0.313rem + 4vi, 1.5rem);
+        letter-spacing: -0.3px;
+        line-height: normal;
+        font-weight: 700;
+        color: var(--color-cyan);
+        margin-bottom: 24px;
+      }
+
+      & h3 {
+        color: var(--color-light-green);
+        font-size: clamp(0.938rem, 0.234rem + 3vi, 1.125rem);
+        letter-spacing: -0.225px;
+        line-height: 20px;
+        margin-bottom: 11px;
+
+        @media (width >= 425px) {
+          line-height: normal;
+        }
+      }
+
+      & p {
+        color: var(--color-gray);
+        font-size: clamp(0.875rem, 0.831rem + 0.188vw, 1rem);
+        line-height: 26px;
+        letter-spacing: -0.2px;
+        font-weight: 400;
+      }
+    }
+
+    &:nth-of-type(2) {
+      background-color: var(--color-cyan);
+
+      @media (width >= 425px) {
+        border-bottom-left-radius: 8px;
+      }
+
+      & h3 {
+        font-size: 1.125rem;
+        line-height: normal;
+        margin-bottom: 18px;
+        letter-spacing: -0.225px;
+        font-weight: 700;
+      }
+
+      & .price {
+        display: flex;
+        gap: 11px;
+        margin-bottom: 4px;
+
+        & p:first-child {
+          font-size: 2rem;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: -0.4px;
+          line-height: normal;
+        }
+
+        & p:last-child {
+          opacity: 0.5;
+          align-self: center;
+          font-weight: 400;
+          line-height: 26px;
+          letter-spacing: -0.2px;
+        }
+      }
+
+      & > p {
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: -0.2px;
+        margin-bottom: 26px;
+      }
+
+      & a {
+        display: block;
+        text-decoration: none;
+        background-color: var(--color-light-green);
+        color: inherit;
+        text-align: center;
+        letter-spacing: -0.2px;
+        border-radius: 5px;
+        box-shadow: var(--btn-shadow);
+        line-height: normal;
+        padding-block: 14px;
+      }
+    }
+
+    &:last-of-type {
+      background-color: var(--color-cyan);
+      opacity: 0.8481;
+
+      @media (width >= 425px) {
+        border-bottom-right-radius: 8px;
+      }
+
+      & h3 {
+        margin-bottom: 18px;
+        font-size: 1.125rem;
+      }
+
+      ul {
+        list-style: none;
+        font-weight: 400;
+        font-size: 0.875rem;
+        letter-spacing: -0.175px;
+        opacity: 0.75;
+        line-height: 20px;
+      }
+    }
+  }
+}
