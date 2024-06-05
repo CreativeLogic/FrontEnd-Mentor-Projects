@@ -77,6 +77,7 @@ article {
         line-height: 1.4;
         letter-spacing: 0.25px;
         margin-bottom: 12px;
+        text-wrap: pretty;
       }
     }
 
@@ -87,7 +88,6 @@ article {
       letter-spacing: 0.122px;
       font-size: 0.8125rem;
       color: var(--color-light-gray);
-      text-wrap: balance;
     }
   }
 
