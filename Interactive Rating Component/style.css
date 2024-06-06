@@ -17,7 +17,6 @@
 body {
   font-family: var(--font-main);
   max-width: 1440px;
-  padding: 154px 24px;
   background-color: var(--main-black);
   min-height: 100svh;
   display: flex;
@@ -26,8 +25,9 @@ body {
   justify-content: center;
   margin: 0 auto;
 
-  @media (width <=450px) {
+  @media (width <= 450px) {
     max-width: 375px;
+    padding: 154px 24px;
   }
 }
 
@@ -37,7 +37,7 @@ article {
   color: var(--light-gray);
   border-radius: 15px;
 
-  @media (width>= 450px) {
+  @media (width >= 450px) {
     max-width: 412px;
     border-radius: 30px;
   }
@@ -72,7 +72,7 @@ article {
 
       @media (width>= 450px) {
         font-size: 1.75rem;
-        margin-top: 35px;
+        margin-top: 34px;
       }
     }
 
