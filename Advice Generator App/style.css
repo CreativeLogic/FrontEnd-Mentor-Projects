@@ -17,6 +17,8 @@ body {
   font-family: var(--font-main);
   max-width: 1440px;
   margin: 0 auto;
+  min-height: 100svh;
+  border: 1px solid red;
   background-color: var(--dark-blue);
 
   @media (width <= 560px) {
@@ -38,6 +40,7 @@ article {
     max-width: 540px;
     padding: 48px 48px 72px 48px;
     border-radius: 15px;
+    max-height: 332px;
   }
 
   h2 {
