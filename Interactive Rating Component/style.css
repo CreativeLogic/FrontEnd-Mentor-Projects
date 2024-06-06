@@ -44,8 +44,6 @@ article {
 
   .rating-component {
     padding: 24px 24px 32px;
-    display: block;
-
     @media (width>= 450px) {
       padding: 32px 39px 32px 32px;
     }
@@ -74,7 +72,7 @@ article {
 
       @media (width>= 450px) {
         font-size: 1.75rem;
-        margin-top: 30px;
+        margin-top: 35px;
       }
     }
 
