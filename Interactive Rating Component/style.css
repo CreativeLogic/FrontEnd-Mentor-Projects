@@ -1,0 +1,232 @@
+@import url(./reset.css);
+
+:root {
+  --main-black: #131518;
+  --gradient: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  --dark-blue: #262e38;
+  --light-gray: #969fad;
+  --orange: #fc7614;
+  --white: #fff;
+  --font-main: 'Overpass', sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  max-width: 1440px;
+  padding: 154px 24px;
+  background-color: var(--main-black);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border: 1px solid red;
+
+  @media (width <=450px) {
+    max-width: 375px;
+  }
+}
+
+article {
+  min-width: 327px;
+  background: var(--gradient);
+  color: var(--light-gray);
+  border-radius: 15px;
+
+  @media (width>= 450px) {
+    max-width: 412px;
+    border-radius: 30px;
+  }
+
+  .rating-component {
+    padding: 24px 24px 32px;
+    display: block;
+
+    @media (width>= 450px) {
+      padding: 32px 39px 32px 32px;
+    }
+
+    div:first-of-type {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: var(--dark-blue);
+
+      @media (width>= 450px) {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    h2 {
+      margin-top: 16px;
+      color: var(--white);
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 1.5;
+
+      @media (width>= 450px) {
+        font-size: 1.75rem;
+        margin-top: 30px;
+      }
+    }
+
+    p {
+      margin-top: 10px;
+      font-weight: 400;
+      line-height: 1.57143;
+      font-size: 0.875rem;
+      margin-bottom: 24px;
+
+      @media (width>= 450px) {
+        margin-top: 7px;
+        font-size: 0.9375rem;
+      }
+    }
+
+    .rating-list {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      user-select: none;
+
+      li {
+        font-weight: 700;
+        letter-spacing: 0.175px;
+        line-height: 1.71429;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background-color: var(--dark-blue);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          background-color: var(--white);
+          outline: 2px solid var(--orange);
+        }
+
+        &:focus {
+          background-color: var(--orange);
+          outline: 2px solid var(--white);
+        }
+
+        &:active {
+          outline: none;
+        }
+
+        @media (width >=450px) {
+          width: 51px;
+          height: 51px;
+          line-height: 1.5;
+          letter-spacing: 0.2px;
+        }
+      }
+    }
+
+    .submit-btn {
+      border-radius: 22.5px;
+      width: 100%;
+      color: var(--main-black);
+      border: none;
+      margin-top: 24px;
+      font-size: 0.875rem;
+      letter-spacing: 1.867px;
+      line-height: 1.5;
+      padding: 14px;
+      text-transform: uppercase;
+      font-weight: 700;
+      background-color: var(--orange);
+      user-select: none;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        background-color: var(--white);
+        outline: 2px solid var(--orange);
+      }
+
+      @media (width >= 450px) {
+        margin-top: 32px;
+        font-size: 0.9375rem;
+        letter-spacing: 2px;
+        padding: 15px 0px 11px 0px;
+        line-height: normal;
+      }
+    }
+  }
+
+  .thankyou-component {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 34px 24px 37px;
+    gap: 29px;
+    text-align: center;
+    justify-content: center;
+
+    @media (width >= 450px) {
+      padding: 45px 40px 45px 32px;
+      gap: 36px;
+    }
+
+    img {
+      width: 144px;
+
+      @media (width >= 450px) {
+        width: 162px;
+      }
+    }
+
+    p:first-of-type {
+      font-size: 0.875rem;
+      border-radius: 22.5px;
+      color: var(--orange);
+      font-weight: 400;
+      line-height: 1.57143;
+      padding: 5px 12px;
+      background-color: var(--dark-blue);
+
+      @media (width >= 450px) {
+        padding: 4px 20px;
+        font-size: 0.9375rem;
+        line-height: 1.6;
+      }
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: var(--white);
+      font-weight: 700;
+      line-height: 1.5;
+
+      @media (width >= 450px) {
+        font-size: 1.75rem;
+      }
+    }
+
+    p:nth-of-type(2) {
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1.57143;
+      margin-top: -19px;
+
+      @media (width >= 450px) {
+        font-size: 0.9375rem;
+        line-height: 1.6;
+      }
+    }
+  }
+}

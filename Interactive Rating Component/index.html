@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js" defer></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main role="main">
+      <article>
+        <section class="rating-component" aria-label="Rate your experience">
+          <div>
+            <img src="./images/icon-star.svg" alt=""/>
+          </div>
+          <h2>How did we do?</h2>
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <ul class="rating-list" role="list">
+            <li tabindex="0" role="list-item" aria-label="Rate 1 out of 5">1</li>
+            <li tabindex="0" role="list-item" aria-label="Rate 2 out of 5">2</li>
+            <li tabindex="0" role="list-item" aria-label="Rate 3 out of 5">3</li>
+            <li tabindex="0" role="list-item" aria-label="Rate 4 out of 5">4</li>
+            <li tabindex="0" role="list-item" aria-label="Rate 5 out of 5">5</li>
+          </ul>
+          <button class="submit-btn" aria-label="Submit your rating">
+            Submit
+          </button>
+        </section>
+        <section
+          class="thankyou-component"
+          aria-label="Thank you message"
+        >
+          <img
+            src="./images/illustration-thank-you.svg"
+            alt="Thank you illustration"
+          />
+          <p>
+            You selected out of 5
+          </p>
+          <h2>Thank you!</h2>
+          <p></p>
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
