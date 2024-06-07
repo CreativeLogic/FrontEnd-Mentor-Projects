@@ -1,0 +1,134 @@
+@import url(./reset.css);
+
+:root {
+  --white: #fff;
+  --dark-purple: #301534;
+  --pale-purple: #8b6990;
+  --light-pink: #f8eeff;
+  --pink-purple: #ad28eb;
+  --font-main: 'Work Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  max-width: 1440px;
+  background-color: var(--light-pink);
+  padding-inline: 24px;
+}
+
+header {
+  min-height: 320px;
+  background: url(./assets/images/background-pattern-desktop.svg) no-repeat
+    center/cover;
+
+  width: 100vw;
+  margin-inline: -24px;
+
+  @media (width <= 650px) {
+    min-height: 232px;
+    background: url(./assets/images/background-pattern-mobile.svg) no-repeat
+      bottom/cover;
+  }
+}
+
+main {
+  min-width: 100vw;
+  margin: auto;
+  margin-left: -24px;
+}
+
+article {
+  max-width: 327px;
+  padding: 24px 24px 0px 24px;
+  background-color: var(--white);
+  margin: -89.5px auto;
+  border-radius: 8px;
+
+  @media (width >= 650px) {
+    max-width: 600px;
+    padding: 40px 40px 16px 40px;
+    border-radius: 16px;
+    margin-top: -152.5px;
+  }
+
+  > div:first-of-type {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    img {
+      width: 24px;
+
+      @media (width >= 650px) {
+        width: 40px;
+      }
+    }
+
+    h2 {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 2rem;
+
+      @media (width >= 650px) {
+        font-size: 3.5rem;
+        line-height: 1.5;
+        margin-bottom: -5px;
+      }
+    }
+  }
+
+  section {
+    &:not(:last-of-type) {
+      border-bottom: 1.5px solid var(--light-pink);
+    }
+
+    > div {
+      display: flex;
+      align-items: center;
+    }
+
+    h3 {
+      font-weight: 600;
+      line-height: 1.5;
+      color: var(--dark-purple);
+      margin-block: 20px;
+
+      @media (width >= 650px) {
+        font-size: 1.125rem;
+        margin-block: 25px;
+      }
+
+      &:hover {
+        color: var(--pink-purple);
+      }
+    }
+
+    button {
+      border: none;
+      min-width: 30px;
+      background-color: inherit;
+      margin-left: auto;
+      cursor: pointer;
+    }
+
+    p {
+      display: none;
+      line-height: 1.5;
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: var(--pale-purple);
+
+      @media (width >= 650px) {
+        font-size: 1rem;
+      }
+
+      &.show {
+        display: block;
+      }
+
+      &:last-of-type {
+        padding-bottom: 24px;
+      }
+    }
+  }
+}
