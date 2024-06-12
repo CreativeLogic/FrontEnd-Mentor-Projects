@@ -22,7 +22,6 @@ const submitEmail = e => {
     picture.style.display = 'none';
     span.textContent = emailValue;
     confirmationSection.removeAttribute('hidden');
-    confirmationSection.setAttribute('aria-hidden', 'false');
   }
 };
 
@@ -50,7 +49,6 @@ const returnToSignUp = () => {
   form.reset();
   confirmationSection.setAttribute('hidden', 'true');
   emailInput.style.outline = 'var(--input-border)';
-  confirmationSection.setAttribute('aria-hidden', 'true');
 };
 
 form.addEventListener('submit', submitEmail);
