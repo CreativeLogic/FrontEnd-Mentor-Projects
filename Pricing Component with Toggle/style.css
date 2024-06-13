@@ -27,8 +27,7 @@ body {
   @media (width <=1100px) {
     max-width: 375px;
     padding-top: 64px;
-    background: url(./images/bg-top.svg) top -40px right -195px / contain
-      no-repeat;
+    background: url(./images/bg-top.svg) top -40px right -195px / contain no-repeat;
   }
 }
 
@@ -38,7 +37,7 @@ header {
   font-weight: 700;
   margin-bottom: 80px;
 
-  @media (width >= 1100px) {
+  @media (width >=1100px) {
     margin-bottom: 64.5px;
   }
 
@@ -49,7 +48,7 @@ header {
     margin-bottom: 40px;
   }
 
-  > div {
+  >div {
     display: flex;
     justify-content: center;
     gap: 24px;
@@ -65,7 +64,7 @@ header {
       width: 56px;
       transition: opacity 0.5s ease-in;
 
-      & input:checked ~ .slideon-slider::before {
+      & input:checked~.slideon-slider::before {
         transform: translateX(-32px);
       }
 
@@ -81,7 +80,8 @@ header {
           background-color: var(--white);
           top: 0;
           bottom: 0;
-          left: calc(100% - 27px); /* Start position on the right */
+          left: calc(100% - 27px);
+          /* Start position on the right */
           margin-block: auto;
           margin-left: 4px;
         }
@@ -98,7 +98,7 @@ header {
   gap: 32.5px;
   text-align: center;
 
-  @media (width >= 1100px) {
+  @media (width >=1100px) {
     flex-direction: row;
     gap: revert;
   }
@@ -112,7 +112,7 @@ header {
     border-radius: 10px;
     box-shadow: var(--card-shadow);
 
-    @media (width >= 1100px) {
+    @media (width >=1100px) {
       min-width: 350px;
     }
 
@@ -143,12 +143,18 @@ header {
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 12px;
       margin-bottom: 32px;
 
       li {
         line-height: 28px;
         font-size: 0.9375rem;
+        border-bottom: 1px solid var(--dark-purple);
+        height: 52px;
+        align-content: center;
+
+        &:first-of-type {
+          border-top: 1px solid var(--dark-purple);
+        }
       }
     }
 
@@ -185,7 +191,7 @@ header {
       background: var(--gradient);
       color: var(--white);
 
-      @media (width >= 1100px) {
+      @media (width >=1100px) {
         min-height: 500px;
         padding: 54.5px 31px;
       }
@@ -194,8 +200,12 @@ header {
         color: var(--white);
       }
 
-      hr {
-        background-color: var(--white);
+      li {
+        border-color: var(--white);
+
+        &:first-of-type {
+          border-top: 1px solid var(--white);
+        }
       }
 
       button {
