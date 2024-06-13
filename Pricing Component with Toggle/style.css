@@ -173,9 +173,11 @@ header {
       cursor: pointer;
       transition: all allow-discrete 0.2s;
 
-      &:hover {
+      &:hover,
+      &:focus {
         background: var(--white);
         color: var(--secondary-purple);
+        border: 1px solid var(--secondary-purple);
       }
     }
 
@@ -200,7 +202,8 @@ header {
         background: var(--white);
         color: var(--dark-purple);
 
-        &:hover {
+        &:hover,
+        &:focus {
           background: var(--gradient);
           color: var(--white);
           border: 1px solid var(--white);
