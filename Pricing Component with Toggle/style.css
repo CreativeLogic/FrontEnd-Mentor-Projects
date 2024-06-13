@@ -19,14 +19,13 @@ body {
   flex-direction: column;
   background-color: var(--secondary-white);
   align-items: center;
-  justify-content: center;
+  padding-top: 71px;
   min-height: 100svh;
   background: url(./images/bg-top.svg) top right / 374px no-repeat,
     url(./images/bg-bottom.svg) bottom left / 350px no-repeat;
 
   @media (width <=1100px) {
     max-width: 375px;
-    justify-content: start;
     padding-top: 64px;
     background: url(./images/bg-top.svg) top -40px right -195px / contain
       no-repeat;
