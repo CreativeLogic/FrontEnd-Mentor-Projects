@@ -27,21 +27,32 @@
           srcset="./assets/images/background-pattern-desktop.svg"
           media="(min-width: 590px)"
         />
-        <img src="./assets/images/background-pattern-mobile.svg" alt="" />
+        <img
+          src="./assets/images/background-pattern-mobile.svg"
+          alt="background pattern"
+        />
       </picture>
     </div>
     <main>
       <article>
         <div>
           <img src="./assets/images/icon-star.svg" alt="star icon" />
-          <h1>faqs</h1>
+          <h1>FAQs</h1>
         </div>
-        <details>
-          <summary aria-controls="faq1" aria-expanded="true">
+        <details open>
+          <summary
+            id="faq1-summary"
+            aria-controls="faq1-content"
+            aria-expanded="true"
+          >
             What is Frontend Mentor, and how will it help me?
             <img src="./assets/images/icon-plus.svg" alt="toggle icon" />
           </summary>
-          <div aria-hidden="false">
+          <div
+            id="faq1-content"
+            aria-labelledby="faq1-summary"
+            aria-hidden="false"
+          >
             <p>
               Frontend Mentor offers realistic coding challenges to help
               developers improve their frontend coding skills with projects in
@@ -52,11 +63,19 @@
         </details>
         <hr />
         <details>
-          <summary aria-controls="faq2" aria-expanded="false">
+          <summary
+            id="faq2-summary"
+            aria-controls="faq2-content"
+            aria-expanded="false"
+          >
             Is Frontend Mentor free?
             <img src="./assets/images/icon-plus.svg" alt="toggle icon" />
           </summary>
-          <div aria-hidden="true">
+          <div
+            id="faq2-content"
+            aria-labelledby="faq2-summary"
+            aria-hidden="true"
+          >
             <p>
               Yes, Frontend Mentor offers both free and premium coding
               challenges, with the free option providing access to a range of
@@ -66,11 +85,19 @@
         </details>
         <hr />
         <details>
-          <summary aria-controls="faq3" aria-expanded="false">
+          <summary
+            id="faq3-summary"
+            aria-controls="faq3-content"
+            aria-expanded="false"
+          >
             Can I use Frontend Mentor projects in my portfolio?
             <img src="./assets/images/icon-plus.svg" alt="toggle icon" />
           </summary>
-          <div aria-hidden="true">
+          <div
+            id="faq3-content"
+            aria-labelledby="faq3-summary"
+            aria-hidden="true"
+          >
             <p>
               Yes, you can use projects completed on Frontend Mentor in your
               portfolio. It's an excellent way to showcase your skills to
@@ -80,11 +107,19 @@
         </details>
         <hr />
         <details>
-          <summary aria-controls="faq4" aria-expanded="false">
+          <summary
+            id="faq4-summary"
+            aria-controls="faq4-content"
+            aria-expanded="false"
+          >
             How can I get help if I'm stuck on challenge?
             <img src="./assets/images/icon-plus.svg" alt="toggle icon" />
           </summary>
-          <div aria-hidden="true">
+          <div
+            id="faq4-content"
+            aria-labelledby="faq4-summary"
+            aria-hidden="true"
+          >
             <p>
               The best place to get help is inside Frontend Mentor's Discord
               community. There's a help channel where you can ask questions and
