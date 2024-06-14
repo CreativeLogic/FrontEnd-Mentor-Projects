@@ -61,6 +61,15 @@ body {
       gap: 24px;
       align-items: center;
       margin-bottom: 4px;
+
+      img {
+        width: 24px;
+
+        @media (width >=640px) {
+          width: 40px;
+          border: 1px solid red;
+        }
+      }
     }
 
     h1 {
@@ -72,15 +81,11 @@ body {
       @media (width >=640px) {
         font-size: 3.5rem;
       }
+
+
+
     }
 
-    img {
-      width: 24px;
-
-      @media (width >=640px) {
-        width: 30px;
-      }
-    }
 
     details {
 
