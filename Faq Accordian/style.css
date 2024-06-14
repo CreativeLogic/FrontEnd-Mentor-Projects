@@ -20,7 +20,7 @@ body {
   margin: auto;
   min-height: 100svh;
 
-  >div:first-of-type img {
+  header img {
     width: 100%;
     max-height: 232px;
     object-fit: cover;
