@@ -23,8 +23,8 @@ body {
   font-family: var(--font-main);
   max-width: 1440px;
   display: flex;
-  justify-content: center;
   min-height: 100svh;
+  justify-content: center;
   margin: auto;
   position: relative;
   background-color: var(--fa);
@@ -93,6 +93,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
+  margin-left: 0;
   gap: 125px;
 
   @media (width <=910px) {
