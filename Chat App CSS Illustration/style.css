@@ -14,6 +14,8 @@
   --light-gray: #a39da9;
   --gray: #6e5d7e;
   --gradient: linear-gradient(225deg, #e844ff 0%, #8739ff 100%);
+  --gradient-price: linear-gradient(225deg, #8739ff 0%, #e844ff 100%);
+
   --font-main: 'Rubik', sans-serif;
 }
 
@@ -21,6 +23,7 @@ body {
   font-family: var(--font-main);
   max-width: 1440px;
   display: flex;
+  justify-content: center;
   min-height: 100svh;
   margin: auto;
   position: relative;
@@ -30,12 +33,26 @@ body {
     content: '';
     position: absolute;
     min-height: 100svh;
-    bottom: 100px;
     left: -90px;
+    bottom: 100px;
     width: 510px;
     background: var(--gradient);
     border-bottom-left-radius: 255px;
     border-bottom-right-radius: 255px;
+    z-index: -1;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    min-height: 100svh;
+    opacity: 0.03;
+    top: 119px;
+    right: -124px;
+    width: 510px;
+    background: var(--gradient);
+    border-top-left-radius: 255px;
+    border-top-right-radius: 255px;
     z-index: -1;
   }
 
@@ -45,12 +62,29 @@ body {
       position: absolute;
       min-height: 100svh;
       width: 510px;
+      top: -427px;
       bottom: 427px;
-      left: -300px;
+      left: -322px;
       background: var(--gradient);
       border-bottom-left-radius: 255px;
       border-bottom-right-radius: 255px;
       z-index: -1;
+    }
+
+    @media (width <=910px) {
+      &::after {
+        content: '';
+        position: absolute;
+        min-height: 100svh;
+        opacity: 0.03;
+        top: 427px;
+        right: -355px;
+        width: 510px;
+        background: var(--gradient);
+        border-top-left-radius: 255px;
+        border-top-right-radius: 255px;
+        z-index: -1;
+      }
     }
   }
 }
@@ -74,7 +108,6 @@ main {
     padding: 11px 9.5px;
     font-size: 0.5rem;
     position: relative;
-    margin-left: 363px;
     box-shadow: var(--card-shadow);
 
     @media (width <=910px) {
@@ -191,7 +224,7 @@ main {
         padding: 10px 8px;
         width: 160px;
         border-radius: 10px 10px 10px 4px;
-        background: var(--gradient);
+        background: var(--gradient-price);
         color: var(--primary-white);
         box-shadow: var(--items-shadow);
 
